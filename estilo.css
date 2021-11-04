@@ -1,0 +1,215 @@
+/*--------------------------------Principais------------------------------------------*/
+
+html, body, .capa{
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    
+    background: url(imagens/capa.png), url(imagens/ruido.png), linear-gradient(50deg, #ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -2px; /*Controla o espacamento das letras*/
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+/*--------------------------------Barra de navegação-----------------------------------*/
+
+.img-logo{
+    height: 40px;
+    width: 132px;
+    display: block;
+    background: url(imagens/spotify.svg) no-repeat;
+    background-size: contain;
+}
+nav.navbar-transparente{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0px;
+    border: none;
+}
+.navbar-toggler{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: #fff;
+    margin-top: 13px;
+}
+.nav-link{
+    color: #fff;
+}
+
+/*configurações de link do menu*/
+
+a.nav-link{
+    color: #fff;
+}
+a.nav-link:hover{
+    color: #9bf0e1;
+}
+
+
+/*------------------------------------IMAGEM DE CAPA PRINCIPAÇ-------------------------*/
+
+.capa{
+    display: table;
+    width: 100%;
+}
+.texto-capa{
+    text-align: center;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*Botões*/
+
+.btn-custom{
+    color: #fff;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;/*Borda compativeis com todos os navegadores*/
+    -moz-border-radius: 500px;/*Borda compativeis com todos os navegadores*/
+    text-transform: uppercase; /*Deixa as letras maiusculas*/
+    transition: background 1 color 1; /*Ajusta a transição do botão para o seu hover*/
+}
+.btn-roxo{
+    background: #7c25f8;
+}
+.btn-roxo:hover{
+    background-color: #6207e3;
+    color: #fff;
+}
+.btn-branco{
+    border: 2px solid #fff;
+}
+.btn-branco:hover{
+    background-color: #fff;
+    color: #7c25f8;
+}
+
+/*----------------------conteúdo-------------------------*/
+    /* -- Serviços --*/
+#servicos{
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.albuns{
+    padding: 10px 0px 10px 0px;
+}
+#servicos h2,#servicos h3{
+    color: #7c25f8;
+    padding-bottom: 10px;
+}
+
+    /* -- Recursos -- */
+
+#recursos{
+    padding: 20px 0px 20px 0px;
+}
+#recursos h2, #recursos p{
+    color: #fff;
+} 
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+.rotacionar{
+    -ms-transform: rotate(30deg);/*IE 9*/
+    -webkit-transform: rotate(30deg);/*Chrome, Safari, Opera*/
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+    /* -- Rodapé -- */
+
+#rodape{
+    background-color: #000;
+    padding: 90px 0px 40px 0px;
+    color: #fff;
+    position: relative;
+}
+
+#rodape li{
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.t-lista{
+    color: rgb(85, 85, 85);
+    font-weight: 800;
+    
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+.redes-sociais img{
+    margin: 5px;
+}
+
+#rodape a{
+    color: #fff;
+    text-decoration: none;
+}
+#rodape a:link{
+    color: #fff;
+}
+#rodape a:visited{
+    color: #fff;
+}
+#rodape a:active{
+    color: rgb(0, 247, 255);
+}
+#rodape a:hover{
+    color: rgb(115, 255, 0);
+}
+
+
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 50px;
+    }
+    .btn-custom{
+        padding: 10px 35px;
+        margin: 10px 15px;
+    }
+} /*Fim media querie*/
+
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 70px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    h1{
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        font-size: 100px;
+    }
+}
